@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_5sdp"
+    android:background="@drawable/shape_rect_round_corner_white"
+    android:padding="@dimen/_3sdp">
+
+
+
+        <com.dreamguys.truelysell.viewwidgets.CircleImageView
+            android:id="@+id/iv_user_img"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_user_placeholder"
+            app:civ_border_color="@color/colorPink"
+            app:civ_border_width="1dp" />
+
+        <TextView
+            android:id="@+id/tv_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv_user_img"
+            android:gravity="left"
+            android:padding="3dp"
+            android:text="Hari sankar have accepted your reqxxxsxsxsxssxxsxsxsxsxsuest"
+            android:textColor="@android:color/black"
+            android:textSize="12dp" />
+
+
+        <TextView
+            android:id="@+id/tv_comments"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_username"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/iv_user_img"
+            android:padding="2dp"
+            android:text="Have accepted your request"
+            android:textColor="@android:color/black"
+            android:textSize="12dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_show_more_replies"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_comments"
+            android:layout_marginLeft="5dp"
+            android:layout_toLeftOf="@+id/tv_reply"
+            android:layout_toRightOf="@+id/iv_user_img"
+            android:background="@color/colorGreyLight"
+            android:padding="5dp"
+            android:text="Show more replies"
+            android:textSize="10dp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:paddingTop="@dimen/_10sdp"
+            android:text="5 mins ago"
+            android:layout_below="@id/tv_username"
+            android:textSize="@dimen/_10sdp"
+            android:visibility="visible" />
+
+</RelativeLayout>

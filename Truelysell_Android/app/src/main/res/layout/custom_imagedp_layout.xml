@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/custom_attachment_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="0dp"
+    android:background="@android:color/transparent">
+
+    <com.dreamguys.truelysell.viewwidgets.CircleImageView
+        android:id="@+id/iv_picture"
+        android:layout_width="@dimen/profile_pic"
+        android:layout_height="@dimen/profile_pic"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:background="@drawable/shape_circle_prof_pic"
+        app:civ_border_color="@android:color/transparent"
+        app:civ_border_width="1dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:srcCompat="@drawable/ic_pic_view" />
+
+
+    <ImageView
+        android:id="@+id/iv_picture_add"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_gravity="bottom|right"
+        android:background="@drawable/shape_circle_prof_pic_add"
+        app:layout_constraintCircle="@+id/iv_picture"
+        app:layout_constraintCircleAngle="120"
+        app:layout_constraintCircleRadius="@dimen/profile_pic_radius"
+        android:padding="5dp"
+        android:src="@drawable/camera"
+        android:visibility="visible" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_margin="5dp">
+
+    <Switch
+        android:id="@+id/switch_select"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:layout_weight="0.7"
+        android:padding="2dp"
+        android:theme="@style/MySwitch" />
+
+    <TextView
+        android:id="@+id/tv_avail_day"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:layout_weight="2"
+        android:text="@string/txt_all_days"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_from_time"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:layout_weight="1"
+        android:background="@drawable/shape_rect_round_corner"
+        android:gravity="center"
+        android:padding="2dp"
+        android:text="9.00 AM"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_to_time"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:layout_weight="1"
+        android:background="@drawable/shape_rect_round_corner"
+        android:gravity="center"
+        android:padding="2dp"
+        android:text="6.00 PM"
+        android:textSize="12sp" />
+</LinearLayout>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_100sdp"
+    android:layout_margin="@dimen/_5sdp"
+    android:background="@drawable/shape_rect_round_corner_white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_gravity="center">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/_10sdp">
+
+            <ImageView
+                android:id="@+id/iv_service_image"
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_80sdp"
+                android:layout_centerVertical="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_service_placeholder" />
+
+            <TextView
+                android:id="@+id/tv_service_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_toStartOf="@+id/rb_rating"
+                android:layout_toEndOf="@+id/iv_service_image"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="Food Services"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/_13sdp" />
+
+            <RatingBar
+                android:id="@+id/rb_rating"
+                style="@style/RatingBarSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_3sdp"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:layout_toStartOf="@+id/tv_rating"
+                android:clickable="false"
+                android:isIndicator="true"
+                android:numStars="5"
+                android:progressTint="@color/colorYellow"
+                android:stepSize="0.5" />
+
+            <TextView
+                android:id="@+id/tv_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:text=""
+                android:textColor="@color/colorDarkGray"
+                android:textSize="@dimen/_9sdp" />
+
+
+            <TextView
+                android:id="@+id/tv_category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_service_name"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:layout_toStartOf="@+id/rb_rating"
+                android:layout_toEndOf="@+id/iv_service_image"
+                android:text="Food Services"
+                android:textColor="@color/colorDarkGray"
+                android:textSize="@dimen/_8sdp" />
+
+
+            <com.dreamguys.truelysell.viewwidgets.CircleImageView
+                android:id="@+id/iv_userimage"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_toEndOf="@+id/iv_service_image"
+                android:src="@drawable/ic_event_thumbnail"
+                app:civ_border_color="@color/colorPink"
+                app:civ_border_width="1px" />
+
+            <ImageView
+                android:id="@+id/iv_accept"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_alignParentBottom="true"
+                android:src="@drawable/ic_accept"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_toEndOf="@+id/iv_userimage" />
+
+            <ImageView
+                android:id="@+id/iv_reject"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_alignParentBottom="true"
+                android:src="@drawable/ic_reject"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_toEndOf="@+id/iv_accept" />
+
+            <TextView
+                android:id="@+id/tv_viewonmap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_rating"
+                android:layout_alignParentEnd="true"
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:drawableStart="@drawable/ic_map_services"
+                android:drawablePadding="@dimen/_5sdp"
+                android:text="@string/txt_view_on_map"
+                android:textColor="@color/colorPink"
+                android:textSize="@dimen/_10sdp" />
+
+
+            <TextView
+                android:id="@+id/tv_service_cost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:text="$140"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/_16sdp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_18sdp"
+            android:background="@drawable/shape_rect_round_corner_pink"
+            android:minEms="5"
+            android:gravity="center"
+            android:padding="@dimen/_1sdp"
+            android:text="@string/txt_inprogress"
+            android:visibility="gone"
+            android:maxEms="10"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_8sdp" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

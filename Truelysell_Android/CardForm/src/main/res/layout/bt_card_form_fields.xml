@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout style="@style/bt_field_container">
+
+        <ImageView
+            android:id="@+id/bt_card_form_cardholder_name_icon"
+            style="@style/bt_card_form_icon"
+            android:visibility="gone"
+            tools:ignore="ContentDescription" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/bt_text_input_layout"
+            android:labelFor="@+id/bt_card_form_cardholder_name"
+            android:paddingStart="@dimen/bt_edit_text_icon_padding"
+            android:paddingLeft="@dimen/bt_edit_text_icon_padding"
+            android:paddingEnd="0dp"
+            android:visibility="gone"
+            tools:ignore="RtlCompat">
+
+            <com.braintreepayments.cardform.view.CardholderNameEditText
+                android:id="@+id/bt_card_form_cardholder_name"
+                style="@style/bt_card_form_field"
+                android:hint="@string/bt_form_hint_cardholder_name"
+                android:textSize="10dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/bt_card_form_card_number_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_credit_card"
+            android:visibility="visible"
+            tools:ignore="ContentDescription" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/bt_text_input_layout"
+            android:labelFor="@+id/bt_card_form_card_number"
+            android:paddingStart="5dp"
+            tools:ignore="RtlCompat">
+
+            <com.braintreepayments.cardform.view.CardEditText
+                android:id="@+id/bt_card_form_card_number"
+                style="@style/bt_card_form_field"
+                android:hint="@string/bt_form_hint_card_number"
+                android:inputType="number"
+                android:textSize="10dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:orientation="vertical"
+        android:weightSum="2"
+        tools:ignore="RtlCompat">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/bt_card_form_expiration_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_creditcard_expiry_date"
+                android:visibility="visible"
+                tools:ignore="ContentDescription" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/bt_text_input_layout"
+                android:layout_width="match_parent"
+                android:layout_marginTop="5dp"
+                android:labelFor="@+id/bt_card_form_expiration"
+                android:paddingStart="5dp">
+
+                <com.braintreepayments.cardform.view.ExpirationDateEditText
+                    android:id="@+id/bt_card_form_expiration"
+                    style="@style/bt_card_form_field"
+                    android:hint="@string/bt_form_hint_expiration"
+                    android:textSize="10dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/bt_card_form_cvv_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_cvv"
+                android:visibility="visible"
+                tools:ignore="ContentDescription" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/bt_text_input_layout"
+                android:layout_width="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:labelFor="@+id/bt_card_form_cvv"
+                android:paddingStart="5dp">
+
+                <com.braintreepayments.cardform.view.CvvEditText
+                    android:id="@+id/bt_card_form_cvv"
+                    style="@style/bt_card_form_field"
+                    android:hint="@string/bt_form_hint_cvv"
+                    android:textSize="10dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/bt_field_container"
+        android:visibility="gone"
+        android:weightSum="2">
+
+        <ImageView
+            android:id="@+id/bt_card_form_postal_code_icon"
+            style="@style/bt_card_form_icon"
+            android:visibility="gone"
+            tools:ignore="ContentDescription" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/bt_text_input_layout"
+            android:labelFor="@+id/bt_card_form_postal_code"
+            android:paddingStart="@dimen/bt_edit_text_icon_padding"
+            android:paddingLeft="@dimen/bt_edit_text_icon_padding"
+            android:paddingEnd="0dp"
+            tools:ignore="RtlCompat">
+
+            <com.braintreepayments.cardform.view.PostalCodeEditText
+                android:id="@+id/bt_card_form_postal_code"
+                style="@style/bt_card_form_field"
+                android:hint="@string/bt_form_hint_postal_code"
+                android:textSize="10dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/bt_field_container"
+        android:visibility="gone"
+        android:weightSum="5">
+
+        <ImageView
+            android:id="@+id/bt_card_form_mobile_number_icon"
+            style="@style/bt_card_form_icon"
+            android:visibility="gone"
+            tools:ignore="ContentDescription" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/bt_text_input_layout"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:labelFor="@+id/bt_card_form_country_code"
+            android:paddingStart="@dimen/bt_edit_text_icon_padding"
+            android:paddingLeft="@dimen/bt_edit_text_icon_padding"
+            android:paddingEnd="0dp"
+            tools:ignore="RtlCompat">
+
+            <com.braintreepayments.cardform.view.CountryCodeEditText
+                android:id="@+id/bt_card_form_country_code"
+                style="@style/bt_card_form_field"
+                android:hint="@string/bt_form_hint_country_code"
+                android:textSize="10dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/bt_text_input_layout"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:labelFor="@+id/bt_card_form_mobile_number">
+
+            <com.braintreepayments.cardform.view.MobileNumberEditText
+                android:id="@+id/bt_card_form_mobile_number"
+                style="@style/bt_card_form_field"
+                android:hint="@string/bt_form_hint_mobile_number"
+                android:textSize="10dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/bt_card_form_mobile_number_explanation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-8dp"
+        android:paddingStart="@dimen/bt_mobile_number_explanation_padding"
+        android:paddingLeft="@dimen/bt_mobile_number_explanation_padding"
+        android:paddingEnd="0dp"
+        android:visibility="gone"
+        tools:ignore="RtlCompat" />
+
+</LinearLayout>

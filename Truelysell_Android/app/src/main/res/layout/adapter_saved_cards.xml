@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/_5sdp"
+    android:layout_marginTop="@dimen/_10sdp"
+    android:layout_marginRight="@dimen/_5sdp"
+    android:layout_marginBottom="@dimen/_10sdp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rb_selected_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:clickable="false"
+            android:focusable="false" />
+
+        <TextView
+            android:id="@+id/ctv_card_brand_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_toRightOf="@+id/rb_selected_card"
+            android:singleLine="true"
+            android:text="Payment"
+            android:textAllCaps="false"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/iv_delete_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_toRightOf="@+id/ctv_card_brand_name"
+            android:src="@drawable/ic_remove" />
+
+        <ImageView
+            android:id="@+id/iv_brand_card_image"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:src="@drawable/ic_card_placeholder" />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/ctv_account_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_40sdp"
+        android:layout_weight="1"
+        android:text="@string/txt_account_no"
+        android:textAllCaps="false"
+        android:textColor="@color/wallet_gray"
+        android:textSize="@dimen/_10sdp" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_ccv_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/txt_ccv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_30sdp"
+            android:text="@string/txt_ccv"
+            android:textAllCaps="false"
+            android:textColor="@color/wallet_gray"
+            android:textSize="@dimen/_10sdp" />
+
+
+        <EditText
+            android:id="@+id/cet_ccv"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:background="@drawable/bakground_rectangle_gray"
+            android:hint="@string/txt_enter_ccv"
+            android:inputType="number"
+            android:maxLength="4"
+            android:padding="@dimen/_8sdp"
+            android:textSize="@dimen/_10sdp" />
+
+
+        <Button
+            android:id="@+id/cbt_verify"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:background="@drawable/shape_rect_round_corner_pink"
+            android:padding="@dimen/_2sdp"
+            android:text="@string/txt_verify"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_10sdp" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/ctv_order_confirmed_warn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:drawableLeft="@drawable/order_confirmed"
+        android:drawablePadding="@dimen/_10sdp"
+        android:text="@string/txt_order_confirmed_warn"
+        android:textAllCaps="false"
+        android:textColor="@color/wallet_gray"
+        android:textSize="@dimen/_10sdp" />
+
+    <View
+        android:id="@+id/view_card_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:background="@color/wallet_gray" />
+
+
+</LinearLayout>

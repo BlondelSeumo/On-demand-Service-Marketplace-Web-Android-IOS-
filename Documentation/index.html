@@ -1,0 +1,653 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+    <title>Installation - Documentation</title>
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body data-spy="scroll" data-target="#sidebar-menu" data-offset="100">
+    <div class="main-wrapper">
+
+		<div class="sidebar" id="sidebar">
+			<div class="sidebar-logo">
+				<a href="">
+					<img src="assets/img/logo-icon.png" class="img-fluid" alt="">
+				</a>
+			</div>
+			<div class="sidebar-inner sidebar-sticky">
+				<div id="sidebar-menu" class="sidebar-menu sidebar-body">
+					<ul class="nav nav-sidebar">
+						<li class="nav-item">
+							<a class="nav-link" href="#introduction">Introduction</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#get-started">Installation</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#requirements">Requirements</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#adminfeatures">Admin Features</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#webfeature">Web App Features</a>
+						</li>
+						
+						<li class="nav-item">
+							<a class="nav-link" href="#support">Support</a>
+						</li>   
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="page-wrapper" id="introduction">
+			<div class="content container-fluid">
+			
+				<div class="page-header">
+					<div class="card">
+						<div class="card-body">
+							<h2>Documentation</h2>
+							<p class="lead mb-0">Documentation</p>
+						</div>
+					</div>
+				</div>
+								
+				
+				<section id="get-started">	
+					<h3>Installation Guide</h3>
+					<p>To Install this App please follow the following easy steps</p>
+					
+					<h5>Step 1: Database Creation</h5> 
+					<ul>
+						<li>Create database on your server 
+							<ul>
+								<li><strong>For example: Go to the MySQLWizard, and then Create a below details:</strong></li> 
+								<li><strong>Database Name:</strong> You can set as per your need.</li>
+								<li><strong>Database User:</strong> You can set as per your need.</li>
+								<li><strong>Databased Password:</strong> You can set as per your need.</li>
+							</ul>
+						</li>
+						<li> Once you have created the database, Upload your mysql file</li>
+					</ul>	
+						
+					<h5>Step 2: Imports data tables</h5> 
+					<ul>
+						<li>After create the database and import the truelysell.sql file</li>
+						<li>truelysell.sql we have attached download file</li>
+					</ul>
+						
+					<h5>Step 3: Upload to server</h5> 
+					<ul>
+						<li>Upload the files to your webserver via FTP or Cpanel</li>
+						<li>Extract your files</li>
+						<li>
+						<p><strong> Log into your cPanel, navigate to the Files section and click the File Manager icon:</strong></p>
+						<p><img src="assets/img/pl_file_manager_13.png" class="img-fluid" alt=""></p>
+						</li>
+						<li>
+						<p><strong> You will be able to see currently assigned permissions in the right-hand column called Permissions: (0755 is default for all files.)</strong></p>
+						<p><img src="assets/img/pl_file_manager_19.png" class="img-fluid" alt=""></p>
+						</li>
+						<li>
+						<p>After upload the project your files will be listed, there you can see the file permission</p>
+					</li>
+					<li>
+						<p>Give the necessary permissions and update it</p>
+						<p><img src="assets/img/cp4.png" class="img-fluid" alt=""></p>
+						<p>The permissions are</p>
+						<ul>
+						<h6>There are three types of access:</h6>
+
+							<li>read: the file can be only read</li>
+							<li>write: the file can be edited</li>
+							<li>execute: the file can be executed as a program</li>
+						<h6>There are three types of user groups, these access types can be applied to:<h6>
+
+							<li>owner: the owner of the file</li>
+							<li>group: other files which are in the same folder or group</li>
+							<li>world: anyone else</li>
+						<h6>The access level is defined in numbers:</h6>
+
+							<li>0 - no access to the file</li>
+							<li>1 - execute only</li>
+							<li>2 - write only</li>
+							<li>3 - write and execute</li>
+							<li>4 - read only</li>
+							<li>5 - read and execute</li>
+							<li>6 - read and write</li>
+							<li>7 - read, write and execute (full permissions)</li>
+						</ul>
+					</li>
+					</ul>
+						
+					<h5>Step 4: Database Connection Settings</h5> 
+					<ul>
+						<li>Go to the Folder which is <b>yourdomain.com/project/application/config/database.php</b></li>
+						<li>Change your database details which you have created which means(step 1)</li>
+						<li>
+							<p><strong>For your refrence please see the below:</strong></p>
+							<p><img src="assets/img/capture.jpg" class="img-fluid" alt=""></p>
+						</li>
+						
+						<li>
+							<p><strong>What computer/server the database is located on (hostname - server name (www.xyz.com));</strong></p>
+							<p><strong>What username to connect to the database with (set user name which we set for database); </strong></p>
+							<p><strong>The password associated with that username (set password which we set for database username);</strong></p>
+							<p><strong>The name of the database((set database name which we create for database)).</strong></p>
+							<p><img src="assets/img/Capturelocal.png" class="img-fluid" alt=""></p>
+						</li>
+					</ul>
+					<h5>Step 5 : How to import the DB files</h5>
+					<ul>
+					<li>Go to your phpmyadmin panel through cpanel dashboard</li>
+					
+					<li>
+						<p>Go to the Menu and click the import option</p>
+						<p><img src="assets/img/db1.png" class="img-fluid" alt=""></p>
+					</li>
+					<li>
+						<p>Go to the database list and select your db</p>
+						<p><img src="assets/img/db.png" class="img-fluid" alt=""></p>
+					</li>
+					<li>
+						<p>In the import menu you can see the file upload option , In that you have to upload the ".sql" file and then click "Go" button</p>
+						<p><img src="assets/img/db2.png" class="img-fluid" alt=""></p>
+					</li>
+					<li>After Clicking the "Go" button your database will be loaded.</li>
+					</ul>
+					<h5>Admin Login Credentials</h5>
+					https://yourdomain.com/admin/<br>
+					Username: <strong>admin</strong><br>
+					password: <strong>admin</strong><br>
+					
+					
+					<hr class="hr-dash my-7">
+				</section>
+				
+				<section id="requirements">
+				<h3>Requirements</h3>
+					<ul>
+					<h4>Software Requirements</h4>
+					You need to be running PHP 5.4+ on a web server. PHPKB knowledge base software has been deployed successfully on both Apache and IIS web servers and tested with MySQL, MariaDB and MSSQL Server databases at the backend.
+						<li>Operating System: Linux, Unix, Windows </li>
+						<li>Web Server: Apache Web Server, LigHTTPD, IIS (with ISAPI_Rewrite installed)</li>
+						<li>PHP Version:
+						<br>
+						For MySQL & MariaDB Editions, PHP 5.4 or above with PHP XML extension enabled.
+						For SQL Server Editions, PHP 5.4 or above with PHP XML extension enabled and Microsoft SQL Server Driver for PHP
+						</li>
+						<li>Database: MySQL 5.1 or above, MariaDB 10.0 or above, Microsoft SQL Server 2005 or above.
+						</li>
+						<li>Web Browser: All industry standard web browsers (Internet Explorer, Mozilla Firefox, Google Chrome, Apple Safari)
+						</li>
+					<h4>Hardware Requirements</h4>
+						<li>Disk Space :  The actual disk space for your knowledge base could easily be 500MB or more (exclusive of database content, media, backups and other files).</li>
+						<li>To host the software in online ,We defenitely recommended the hosting platform with (Windows, Mac or Linux)</li>
+						<li>Your Hosting Server should be accomplish with the above software and hardware requirements</li>
+
+					</ul>
+					<!--<h3>Requirements</h3>
+					<h5>Hardware</h5>
+					<ul>
+						<li>Processor: Minimum 1 GHz; Recommended 2GHz or more.</li>
+						<li>Ethernet connection (LAN) OR a wireless adapter (Wi-Fi)</li>
+						<li>Hard Drive: Minimum 32 GB; Recommended 64 GB or more.</li>
+						<li>Memory (RAM): Minimum 1 GB; Recommended 4 GB or above.</li>
+					</ul>
+					<hr class="hr-dash my-7">
+					
+					<h5>Software</h5>
+					<ul>
+						<li>PHP 5.4 or above</li>
+						<li>Apache 2.x</li>
+						<li>MySQL 5.1 or above</li>
+					</ul>-->
+					<hr class="hr-dash my-7">
+				</section>
+				<section id="adminfeatures">
+					<h3>Admin Features</h3>
+					<p>The admin can have the access to all the setting</p>
+					
+					<p>Admin will do the access of the buyer/Service Provder where they newly registered to the service market place.</p>
+					<div class="card">
+						<div class="card-body">
+							<h5 class="card-title">Settings</h5>
+							<p>Here admin has an option to set General information</p>
+							
+							<p><strong>General settings:</strong> <br>Admin can add/edit the setting like website name, logo, Favicon, Social login API.</p>
+							<p><img src="assets/img/settings.jpg" class="img-fluid" alt=""></p>
+							
+							<p><strong>Login type settings:</strong> <br>In general settings we have a option for login type access, We can choose user wants to login through Mobile No/Email ID. We can set it only one time. </p>
+							<p><img src="assets/img/sescrn.png" class="img-fluid" alt=""></p>
+							<br>
+							<p><strong>Google map API key settings:</strong> <br>In general settings we have a field for add google map api key, We can add google map api key for map location. </p>
+							<p><img src="assets/img/map_key.png" class="img-fluid" alt=""></p><br>
+							<p><b>NOTE : We need to enable billing,JavaScript API and Map Related options.  </b> &nbsp;&nbsp;&nbsp;<a target="_blank" href="https://developers.google.com/maps/gmp-get-started#enable-api-sdk">Click Here</a> </p>
+							<br>
+							
+							<p><strong>Push Notification:</strong> <br>Here Admin can add/edit the Firebase Server Key and APNS Key for Push notification and chattings. </p>
+							<p><img src="assets/img/pushnotification.png" class="img-fluid" alt=""></p>
+							<br>
+							
+							<p><strong>Terms & Conditions, Privacy Policy, About Us:</strong> <br>Here Admin can add/edit the conent for Terms & Conditions, Privacy Policy and About Us page. By using a text editor you can add images and hyperlink and much more. </p>
+							<p><img src="assets/img/about.jpg" class="img-fluid" alt=""></p>
+							<p><strong>Email settings:</strong> <br>Admin has an option to SMTP mail configurations.</p>
+							<p><img src="assets/img/email.jpg" class="img-fluid" alt=""></p>
+							<p><strong>Payment Gateway:</strong> <br>We have integrated Stripe,Paypal,Razorpay Payment modes, Admin can easily add the live API account details.</p>
+							<p><img src="assets/img/pgateway.png" class="img-fluid" alt=""></p>
+							<p><strong>SMS gateway: </strong> <br>We have integrated the Nexmo SMS Gateway. Here Admin can add the API details.</p>
+							<p class="mb-0"><img src="assets/img/sms.jpg" class="img-fluid" alt=""></p>
+							<p><strong>SEO Settings: </strong> <br>Here admin can set title and description and keywords for search engine optimization</p>
+							<p class="mb-0"><img src="assets/img/seo.jpg" class="img-fluid" alt=""></p><p>&nbsp;</p>
+							<p class="mb-0"><img src="assets/img/socialmeta.png" class="img-fluid" alt=""></p>
+							<p><strong>Theme Color change: </strong> <br>By using the option admin can change the theme color at any time</p>
+							<p class="mb-0"><img src="assets/img/themecolor.jpg" class="img-fluid" alt=""></p>
+						</div>
+					</div>
+					
+					
+					
+					
+					<div class="card">
+						<div class="card-body">
+						<h5 class="card-title">Admin forget password</h5>
+						<p>Admin and subadmin has option for reset thier password through email link.</p>
+						
+						<p class="mb-0"><img src="assets/img/forgetpwd.png" class="img-fluid" alt=""></p>
+						</div>
+					</div>
+					
+					<div class="card">
+						<div class="card-body">
+						<h5 class="card-title">Admin Dashboard</h5>
+						<p>Default page after successful login by admin. Following details are visible to admin.</p>
+						<ul>
+							<li>Total number of category & sub-category</li>
+							<li>Total number of services</li>
+							<li>Total number of users</li>
+							<li>Total number of orders status history</li>
+						</ul>
+						<p class="mb-0"><img src="assets/img/dashboard.jpg" class="img-fluid" alt=""></p>
+						</div>
+					</div>
+					
+					<div class="card">
+						<div class="card-body">
+						<h5 class="card-title">Admin Users</h5>
+						<p>Admin has the option to add new subadmins. Also, has an option to ‘Edit’ or ‘Delete’ </p>
+						
+						<p class="mb-0"><img src="assets/img/adminusers.png" class="img-fluid" alt=""></p><br><br>
+						<p class="mb-0">Admin has the option to set module access restrictions.</p><br>
+						<p class="mb-0"><img src="assets/img/adminusers1.png" class="img-fluid" alt=""></p>
+						</div>
+					</div>
+					
+					<div class="card">
+						<div class="card-body">
+							<h5 class="card-title">Category & Sub-Category</h5>
+							<p>Admin has the option to add new category type here. Also, has an option to ‘Edit’ or ‘Delete’ already categorized here</p>
+							<p><strong>Note:</strong> If you delete any category, Sub Category also will be deleted and Sub Category service lising also deleted</p> 
+							<p class="mb-0"><img src="assets/img/category2.jpg" class="img-fluid" alt=""></p>	
+						</div>
+					</div>
+					
+					<div class="card">
+						<div class="card-body">
+							<h5 class="card-title">Services</h5>
+							<p>Admin can view all the services and they are able to activate or deactivate the services.</p>
+							<p class="mb-0"><img src="assets/img/services.jpg" class="img-fluid" alt=""></p>
+						</div>
+					</div>
+						
+					<div class="card">
+						<div class="card-body">
+							<h5 class="card-title">Booking List</h5>
+							<p>Admin has the option to view the status of ‘Booking History’ list that mentions below,</p> 
+							<ul>
+								<li><strong>All booking</strong> - Admin can view total number of services booked on date-wise.</li>
+								<li><strong>Pending</strong> – Provider yet to confirm the service request from user.</li>
+								<li><strong>In-progress</strong> – Service provider accepted the service.</li>
+								<li><strong>Completed</strong> - Total number of service is completed.</li>
+								<li><strong>Rejected</strong>- Orders declined by service provider.</li>
+								<li><strong>Cancelled</strong> - Orders cancelled by provider. 
+							</ul>
+							<p class="mb-0"><img src="assets/img/bookinglist.jpg" class="img-fluid" alt=""></p>
+						</div>
+					</div>
+					
+					<div class="card">
+						<div class="card-body">
+							<h5 class="card-title">Contact Detail</h5>
+							<p>If the user has entered any details via contact form Admin can receive and view the message details here.</p>
+							<p class="mb-0"><img src="assets/img/contact.jpg" class="img-fluid" alt=""></p>
+							<p class="mb-0">&nbsp;</p>
+							
+							<h5 class="card-title">Contact Reply</h5>
+							<p>If the user has entered any details via contact form Admin can reply to that particular message and it will be send through mail to users.</p>
+							<p class="mb-0"><img src="assets/img/contactdetail.png" class="img-fluid" alt=""></p>
+							
+						</div>
+					</div>
+					
+					<div class="card">
+						<div class="card-body">
+							<h5 class="card-title">Rating Type</h5>
+							<p>Admin can add/edit the rating type like Good, Excellent and normal.</p>
+							<p class="mb-0"><img src="assets/img/ratings.jpg" class="img-fluid" alt=""></p>
+						</div>
+					</div>
+					
+					<div class="card">
+						<div class="card-body">
+							<h5 class="card-title">Ratings</h5>
+							<p>Here admin can view the entire customer’s reviews, Also you can able to delete the reviews</p>
+							<p class="mb-0"><img src="assets/img/ratings1.jpg" class="img-fluid" alt=""></p>
+						</div>
+					</div>
+						
+					<div class="card">
+						<div class="card-body">
+							<h5 class="card-title">Subscriptions</h5>
+							<p>Admin has the option to add new subscription type here. Also, has an option to ‘Edit’ or ‘Delete’ already subscription here.</p>
+							<p class="mb-0"><img src="assets/img/subscription-add.jpg" class="img-fluid" alt=""></p>
+						</div>
+					</div>
+						
+					<div class="card">
+						<div class="card-body">
+							<h5 class="card-title">Wallet</h5>
+							<p>Here admin can view all the users & providers transaction history. </p>
+							<p class="mb-0"><img src="assets/img/walletadmin.jpg" class="img-fluid" alt=""></p>
+						</div>
+					</div>
+					
+					<div class="card">
+						<div class="card-body">
+							<h5 class="card-title">Service Provider</h5>
+							<p>Admin has the option to view all service providers list with subscription plan</p>
+							<p class="mb-0"><img src="assets/img/service1.jpg" class="img-fluid" alt=""></p>
+						</div>
+					</div>
+					
+					<div class="card">
+						<div class="card-body">
+							<h5 class="card-title">Regional Language</h5>
+							<p>Admin has the option to set their regional language.</p>
+							<p class="mb-0"><img src="assets/img/language.jpg" class="img-fluid" alt=""></p>
+						</div>
+					</div>
+					
+					<div class="card">
+						<div class="card-body">
+							<h5 class="card-title">Country Code</h5>
+							<p>Here admin has an option to set Country Code</p>
+							
+							<p><strong>Country Code List</strong> <br>By Using this option admin has to view all the country code list also if you want you can edit/delete the country code</p>
+							<p><img src="assets/img/countrycode.jpg" class="img-fluid" alt=""></p>
+							<p><strong>Add Country code:</strong> <br>Here Admin can add the new country code, Click the add button (+) Symbol, you need to enter below details Here i have given for example, </p>
+								<ul>
+									<li>Country Code: India(IN), United States (US)</li>
+									<li>Country ID: India +91, United States +1</li>
+									<li>Country Name: You need to enter like this India(+91)</li>
+								</ul>	
+							<p><img src="assets/img/addcountrycode.jpg" class="img-fluid" alt=""></P>
+							 	
+						</div>
+					</div>
+					
+					<div class="card">
+						<div class="card-body">
+							<h5 class="card-title">Revenue</h5>
+							<p>Here admin can view the earned Commission amount </p>
+							<p class="mb-0"><img src="assets/img/revenue.jpg" class="img-fluid" alt=""></p>
+						</div>
+					</div>
+					
+					<div class="card">
+						<div class="card-body">
+							<h5 class="card-title">Users List</h5>
+							<p>Admin can view the entire customer list. Also admin has an option to active/inactive the Users</p>
+							<p class="mb-0"><img src="assets/img/userslist.jpg" class="img-fluid" alt=""></p>
+						</div>
+					</div>
+					
+					<div class="card">
+						<div class="card-body">
+							<h5 class="card-title">Email Template</h5>
+							<p>Admin can set an email template format for user registration,booking confirmation,booking status. and also has an edit template format. </p>
+							<p class="mb-0"><img src="assets/img/emailtemp.png" class="img-fluid" alt=""></p>
+						</div>
+					</div>
+					
+					<div class="card">
+						<div class="card-body">
+							<h5 class="card-title">Service Providers</h5>
+							<p>Admin can view the entire service providers list. Also admin has an option to active/inactive the services</p>
+							<p class="mb-0"><img src="assets/img/serviceproviders.jpg" class="img-fluid" alt=""></p>
+						</div>
+					</div>
+					
+					
+					
+					<div class="card">
+						<div class="card-body">
+							<h5 class="card-title">Footer</h5>
+							<p>Here admin has an option to set Footer information</p>
+							
+							<p><strong>Footer Menu:</strong> <br>Here admin can set Footer menu option, Click on add you can set menu names</p>
+							<p><img src="assets/img/footermenu" class="img-fluid" alt=""></p>
+							<p><strong>Footer Sub Menu</strong> <br>Here Admin can set the Footer Sub menu options, By cliking menu you can set a link and By clicking 	widget you can add the footer menu content like locations details and etc. </p>
+							<p><img src="assets/img/footersub.jpg" class="img-fluid" alt=""></p>
+									
+						</div>
+					</div>
+				</section>
+				<section id="webfeature">
+					<h3>Web App Features</h3>
+					<h5>Become Professional (Service Provider)</h5>
+					
+					<p>Service Providers can add a wide range of services and delivered by professional experts from nearby locations.</p>
+					<div class="card">
+						<div class="card-body">
+							<h5 class="card-title">Join as a professional</h5>
+							<strong>Category/subcateogry:</strong>
+							<p>Here a number of categories have been listed. First you can select your categories which service are you going to provide to the customers and then you can choose the relevant sub categories. If you don’t have sub category it will be others list</p>
+							<p class="mb-0"><img src="assets/img/category.jpg" class="img-fluid" alt=""></p>
+						</div>
+					</div>
+					
+					<div class="card">
+						<div class="card-body">
+							<h5 class="card-title">Register With Mobile No</h5>
+							<p>In register page, user should fill all the mandatory details.</p>
+							<p><img src="assets/img/register.jpg" class="img-fluid" alt=""></p>
+							<p>Once you have entered the details, You will receive an OTP if user login type is mobile no.</p>
+							<p><img src="assets/img/otp.jpg" class="img-fluid" alt=""></p>
+							
+							<p>If user login type is Email ID means password popup will be appear.</p>
+							<p><img src="assets/img/emailregisterpro.png" class="img-fluid" alt=""></p>
+							<p class="mb-0">On Successful registration, It will be go to the Home Page</p>
+						</div>
+					</div>
+					
+					<div class="card">
+						<div class="card-body">
+							<h5 class="card-title">Post a service</h5>
+							<p>If you post a service, First you have to choose the subscription, without subscription you cannot post any service.</p>
+							<p><img src="assets/img/subscription.jpg" class="img-fluid" alt=""></p>
+							<p><strong>Subscription:</strong> As per your needs, you can choose the subscription plans. We have integrated Stripe,Paypal,Razorpay payment gateways. By using credit/debit you can pay it. Suppose if your plan is going to expire you will receive an alert.</p>
+							<p><img src="assets/img/prosups.png" class="img-fluid" alt=""></p><br><br>
+							<p><img src="assets/img/stripe.jpg" class="img-fluid" alt=""></p>
+							<p><strong>Availability:</strong> And then set your availablity time as per your convenient time.</p>
+							<p class="mb-0"><img src="assets/img/availaibility.jpg" class="img-fluid" alt=""></p>
+						</div>
+					</div>
+					
+					<div class="card">
+						<div class="card-body">
+							<h5 class="card-title">Add Service</h5>
+							<p><strong>Service Information:</strong> <br>Here you can post your services in detailed information about what you are going to provide service to the customers such as,</p>
+							<ul>
+								<li>Service Title</li>
+								<li>Service Amount</li>
+								<li>Service Location</li>
+								<li>Category/subcateogry</li>
+								<li>Detailed Information</li>
+								<li>Add Multiple Images</li>
+							</ul>
+							<p class="mb-0"><img src="assets/img/addservice.jpg" class="img-fluid" alt=""></p>
+						</div>
+					</div>
+					
+					<div class="card">
+						<div class="card-body">
+						<h5 class="card-title">Service Provider Dashboard</h5>
+						<p><strong>Dashboard:</strong> <br>Enhanced Dashboard for Vendors (Service Provider) to view the business details Bookings, Services, Notifications</p>
+						<p><img src="assets/img/provider-dashboard.jpg" class="img-fluid" alt=""></p>
+						<p><strong>My Services:</strong> <br>Service Providers can view our active and inactive services</p>
+						<p><img src="assets/img/myservice.jpg" class="img-fluid" alt=""></p>
+						<p><strong>Booking List:</strong> <br>In this menu Service provider can view all the booking list</p>
+						<p><img src="assets/img/serviceproviderbookings.jpg" class="img-fluid" alt=""></p>
+						<p><strong>Profile Settings:</strong> <br>Service providers can update the general informations such as Service info, Adderess, Country</p>
+						<p><img src="assets/img/provider-profile.jpg" class="img-fluid" alt=""></p>
+						<p><strong>Wallet:</strong> <br>By using this option, Service provider can able to withdraw your amount from wallet to stripe account.</p>
+						<p class="mb-0"><img src="assets/img/withdraw.jpg" class="img-fluid" alt=""></p>
+						</div>
+					</div>
+					
+					<div class="card">
+						<div class="card-body">
+						<h5 class="card-title">Notifications</h5>
+							<p>The Service provider can receive the notification regarding the services in alert.</p>
+							<p class="mb-0"><img src="assets/img/notifications.jpg" class="img-fluid" alt=""></p>
+						</div>
+					</div>
+					
+					<div class="card">
+						<div class="card-body">
+						<h5 class="card-title">Change Password</h5>
+							<p>The Service provider can change thier password through change password module.</p>
+							<p class="mb-0"><img src="assets/img/changepwdpro.png" class="img-fluid" alt=""></p>
+						</div>
+					</div>
+					
+					
+					<hr class="hr-dash my-7">
+					
+					<h4 class="text-primary mb-3">Become User (Customer)</h4>
+						
+					<div class="card">
+						<div class="card-body">
+						<h5 class="card-title">Register</h5>
+							<p>In register page, user should fill all the mandatory details.</p>
+							<p><img src="assets/img/register-user.jpg" class="img-fluid" alt=""></p>
+							<p>Once you have entered the details, You will receive an OTP if user login type is mobile no.</p>
+							<p><img src="assets/img/otp.jpg" class="img-fluid" alt=""></p>
+							
+							<p>If user login type is Email ID means password popup will be appear.</p>
+							<p><img src="assets/img/emailregisteruser.png" class="img-fluid" alt=""></p>
+							<p class="mb-0">On Successful registration, It will be go to the Home Page</p>
+						</div>
+					</div>
+
+					<div class="card">
+						<div class="card-body">
+							<h5 class="card-title">Book Service</h5>
+							<p>By Using this app, Simply user can book your services nearby locations</p>
+							<P>Book Nearbyservice: Users can book a widerange of services  nearby locations with help of GPS</p>
+							<p><img src="assets/img/home.jpg" class="img-fluid" alt=""></p>
+							<p>Wallet Transaction: Before choosing a service user must be add the amount in wallet.We have integrated stripe,paypal,razorpay payment gateways. As per you convenient you can add the amount. After detecting the stripe commssion remain payment will be credited in your wallet. Also user can see wallet transaction history.</p>
+							<p><img src="assets/img/wallet.png" class="img-fluid" alt=""></p>
+							
+						
+							
+							
+							<P><strong>My Bookings:</strong> User can see our booking service history </P>
+							<p><img src="assets/img/mybookings.jpg" class="img-fluid" alt=""></p>
+							<p><strong>Accept:</strong> <br>Once user is booking a service, User need to accept the service </p>
+							<p><img src="assets/img/accept.jpg" class="img-fluid" alt=""></p>
+							<p><strong>InProgress:</strong> <br>Service provider accepted the service.</p>
+							<p><img src="assets/img/inprogress.jpg" class="img-fluid" alt=""></p>
+							<p><strong>Complete Request:</strong> <br>Once service provider completed the job, He has request to the User.</p>
+							<p><img src="assets/img/complete-request.jpg" class="img-fluid" alt=""></p>
+							<p><strong>Accept Request:</strong> <br>If the job is completed user has accepted the service or if user has not satisfied the service user has to reject the service.</p>
+							<p><strong>Reviews:</strong> <br>The buyer can leave a feedback about the service provider and also review the feedback.</p>
+							<p class="mb-0"><img src="assets/img/reviews.jpg" class="img-fluid" alt=""></p>
+						</div>
+					</div>
+						
+					<div class="card">
+						<div class="card-body">
+							<h5 class="card-title">Chat Option</h5>
+							<p>The chat option is integrated to do message service with service provider</p>
+							<p class="mb-0"><img src="assets/img/chat.jpg" class="img-fluid" alt=""></p>
+						</div>
+					</div>
+						
+					<div class="card">
+						<div class="card-body">
+							<h5 class="card-title">Payment Histroy</h5>
+							<p>Here User can see the payment history</p>
+							<p class="mb-0"><img src="assets/img/payment-history.jpg" class="img-fluid" alt=""></p>
+						</div>
+					</div>
+					
+					<div class="card">
+						<div class="card-body">
+						<h5 class="card-title">Notifications</h5>
+							<p>The User can receive the notification regarding the services in alert.</p>
+							<p class="mb-0"><img src="assets/img/notifications.jpg" class="img-fluid" alt=""></p>
+						</div>
+					</div>
+					
+					
+					<div class="card">
+						<div class="card-body">
+						<h5 class="card-title">Change Password</h5>
+							<p>The User can change thier password through change password module.</p>
+							<p class="mb-0"><img src="assets/img/changepwduser.png" class="img-fluid" alt=""></p>
+						</div>
+					</div>
+					
+					
+					<div class="card">
+						<div class="card-body">
+						<h5 class="card-title">Login</h5>
+							<p> Users and Service provider can able to login with registerd mobile number.</p>
+							<p class="mb-0"><img src="assets/img/login.jpg" class="img-fluid" alt=""></p>
+						</div>
+					</div>
+					
+					<div class="card">
+						<div class="card-body">
+						<h5 class="card-title">Forget Password</h5>
+							<p> Users and Service provider can able to reset their password through forget password option. Reset link will be recive once u click CLICK TO GET LINK option.</p>
+							<p class="mb-0"><img src="assets/img/userforgetpass.png" class="img-fluid" alt=""></p>
+						</div>
+					</div>
+					
+					
+					<hr class="hr-dash">
+				</section>
+				
+				
+				
+				<section id="support">
+					<h3>Support</h3>
+					<p class="mb-0">If you have any queries please contact us through email: <strong>seumoblondel@gmail.com</strong></p>
+				</section>
+			</div>
+		</div>    
+	</div>
+    <script src="assets/js/jquery-3.2.1.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/_10sdp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.dreamguys.truelysell.viewwidgets.CircleImageView
+                android:id="@+id/iv_user_image"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:src="@drawable/ic_user_placeholder"
+                app:civ_border_color="@color/colorPink"
+                app:civ_border_width="@dimen/_1sdp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_toEndOf="@+id/iv_user_image"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_username"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toStartOf="@+id/iv_call"
+                        android:textAlignment="viewStart"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="Hari sankar"
+                        android:textColor="@color/textColorBlue"
+                        android:textSize="@dimen/_16sdp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/iv_call"
+                        android:layout_width="@dimen/_25sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:layout_toStartOf="@+id/iv_chat"
+                        android:src="@drawable/ic_call_filled_48"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/iv_chat"
+                        android:layout_width="@dimen/_25sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:src="@drawable/ic_chat_filled_48"
+                        android:visibility="gone" />
+
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/tv_email_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:drawableStart="@drawable/ic_mail_36"
+                    android:textAlignment="viewStart"
+                    android:drawablePadding="@dimen/_10sdp"
+                    android:text="hari.s@dreamguys.co.in"
+                    android:textColor="@color/textColorBlue" />
+
+                <TextView
+                    android:id="@+id/tv_mobile_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:textAlignment="viewStart"
+                    android:drawableStart="@drawable/ic_phone_36"
+                    android:drawablePadding="@dimen/_10sdp"
+                    android:text=""
+                    android:textColor="@color/textColorBlue" />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:padding="@dimen/_5sdp">
+
+            <ImageView
+                android:id="@+id/iv_locations"
+                android:layout_width="@dimen/_5sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:background="@drawable/shape_rect_round_corner_yellow" />
+
+            <TextView
+                android:id="@+id/txt_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_toEndOf="@+id/iv_locations"
+                android:padding="@dimen/_3sdp"
+                android:text="@string/txt_location"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/_10sdp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_viewonmap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:drawableTint="@color/colorPrimary"
+                android:drawableStart="@drawable/ic_map_services"
+                android:drawablePadding="@dimen/_5sdp"
+                android:text="@string/txt_view_on_map"
+                android:textColor="@color/colorPink"
+                android:textSize="@dimen/_10sdp" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_provider_addr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:textAlignment="viewStart"
+            android:background="@drawable/shape_rect_round_corner_white"
+            android:drawableStart="@drawable/map_pin"
+            android:drawablePadding="@dimen/_10sdp"
+            android:padding="@dimen/_10sdp"
+            android:text="22, Sree Kanchi Nagar"
+            android:textSize="@dimen/_12sdp" />
+
+
+        <RelativeLayout
+            android:id="@+id/rl_other_services"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:padding="@dimen/_5sdp">
+
+            <ImageView
+                android:id="@+id/iv_other_services"
+                android:layout_width="@dimen/_5sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:background="@drawable/shape_rect_round_corner_yellow" />
+
+            <TextView
+                android:id="@+id/txt_other_services"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_toEndOf="@+id/iv_other_services"
+                android:padding="@dimen/_3sdp"
+                android:text="@string/txt_other_services"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/_10sdp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_other_services"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/adapter_popular_services" />
+
+        <TextView
+            android:id="@+id/tv_no_records_found"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/no_services_available"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

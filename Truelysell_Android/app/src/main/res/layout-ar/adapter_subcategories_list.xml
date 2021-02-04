@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="5dp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <com.dreamguys.truelysell.viewwidgets.CircleImageView
+            android:id="@+id/iv_subcat_image"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            app:civ_border_width="@dimen/_1sdp"
+            app:civ_border_color="@android:color/transparent"
+            android:src="@drawable/placeholder" />
+
+        <TextView
+            android:id="@+id/tv_subcatname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:maxLines="2"
+            android:text="Bike"
+            android:textColor="@color/textColorBlue"
+            android:textSize="@dimen/_12sdp" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--<style name="RatingBar" parent="Theme.AppCompat">-->
+        <!--<item name="ratingBarStyle">@style/MyRatingBar</item>-->
+    <!--</style>-->
+
+    <style name="RatingBar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">@color/colorAccent</item>
+        <item name="colorControlActivated">@color/colorYellow</item>
+    </style>
+</resources>

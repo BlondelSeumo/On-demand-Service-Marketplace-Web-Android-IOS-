@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1024257304686",
+    "firebase_url": "https://truelysell-602d3.firebaseio.com",
+    "project_id": "truelysell-602d3",
+    "storage_bucket": "truelysell-602d3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1024257304686:android:fe2a31de6ec17efdd95e7f",
+        "android_client_info": {
+          "package_name": "com.dreamguys.truelysell"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1024257304686-juk8ddtoiap8fl57mo44fjo916k8a3kj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dreamguys.truelysell",
+            "certificate_hash": "7b56caef17159ec8f7aac9a37da50035012e5b70"
+          }
+        },
+        {
+          "client_id": "1024257304686-tnltbouhaik0ds6rejuf3tqhkkmohsvr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCYS1PGusz7P8SHvc7G888wXK0PrlWbucU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1024257304686-tnltbouhaik0ds6rejuf3tqhkkmohsvr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

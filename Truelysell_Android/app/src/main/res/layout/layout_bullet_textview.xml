@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="2dp">
+
+    <TextView
+        android:id="@+id/tv_bullet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/drawable_diamond"
+        android:drawableTint="@color/colorPink"
+        android:drawablePadding="@dimen/_3sdp"
+        android:ellipsize="end"
+        android:gravity="center|left"
+        android:padding="@dimen/_3sdp"
+        android:text="dasdadasasdadadasda"
+        android:textSize="@dimen/_11sdp" />
+</LinearLayout>

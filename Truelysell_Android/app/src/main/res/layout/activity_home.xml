@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ctb_tabbar"
+        android:visibility="gone" />
+
+
+    <FrameLayout
+        android:id="@+id/fragment_frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ctb_tabbar">
+
+<!--         <fragment-->
+<!--         android:id="@+id/listFragment"-->
+<!--         android:layout_width="match_parent"-->
+<!--         android:layout_height="match_parent"-->
+<!--         tools:layout="@layout/fragment_home" />-->
+
+    </FrameLayout>
+
+    <com.dreamguys.truelysell.TabBar.CustomTabBar
+        android:id="@+id/ctb_tabbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorWhite"
+        app:TabAnimate="Scale"
+        app:TabMiddleView="@layout/view_mitem" />
+
+</RelativeLayout>

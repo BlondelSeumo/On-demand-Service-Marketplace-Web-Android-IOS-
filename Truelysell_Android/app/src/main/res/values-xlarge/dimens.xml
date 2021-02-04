@@ -1,0 +1,8 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+    <dimen name="login_footer_text_size">14dp</dimen>
+    <dimen name="profile_pic">120dp</dimen>
+    <dimen name="profile_pic_radius">60dp</dimen>
+    <dimen name="profile_pic_c_radius">45dp</dimen>
+</resources>

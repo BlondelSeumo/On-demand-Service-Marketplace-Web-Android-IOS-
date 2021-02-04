@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CircleImageView">
+        <attr name="civ_border_width" format="dimension" />
+        <attr name="civ_border_color" format="color" />
+        <attr name="civ_border_overlay" format="boolean" />
+        <!-- {@deprecated Use civ_circlebackground_color instead.} -->
+        <attr name="civ_fill_color" format="color" />
+        <attr name="civ_circle_background_color" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="CustomImageDPView">
+        <attr name="showAddButton" format="boolean" />
+        <attr name="imageOnly" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="SwipeRevealLayout">
+        <attr name="dragEdge">
+            <flag name="left" value="1" />
+            <flag name="right" value="2" />
+            <flag name="top" value="4" />
+            <flag name="bottom" value="8" />
+        </attr>
+
+        <attr name="mode">
+            <enum name="normal" value="0" />
+            <enum name="same_level" value="1" />
+        </attr>
+
+        <attr name="flingVelocity" format="integer" />
+
+        <attr name="minDistRequestDisallowParent" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="JPTabBar">
+        <attr name="TabNormalColor" format="reference|color"/>
+        <attr name="TabSelectColor" format="reference|color"/>
+        <attr name="TabSelectBg" format="reference|color"/>
+        <attr name="TabTextSize" format="dimension|reference"/>
+        <attr name="TabTypeface" format="string"/>
+        <attr name="TabIconSize" format="dimension|reference"/>
+        <attr name="TabIconFilter" format="boolean"/>
+        <attr name="TabMargin" format="dimension|reference"/>
+        <attr name="TabAnimate" format="enum">
+            <enum name="Flip" value="0"/>
+            <enum name="Rotate" value="1"/>
+            <enum name="Scale" value="2"/>
+            <enum name="Jump" value="3"/>
+            <enum name="Scale2" value="4"/>
+            <enum name="None" value="5"/>
+        </attr>
+        <attr name="TabPressAnimateEnable" format="boolean"/>
+        <attr name="TabPageAnimateEnable" format="boolean"/>
+        <attr name="TabGradientEnable" format="boolean"/>
+        <attr name="TabMiddleBottomDis" format="dimension|reference"/>
+        <attr name="TabMiddleView" format="reference"/>
+        <attr name="TabMiddleHMargin" format="dimension|reference"/>
+        <attr name="BadgeColor" format="reference|color"/>
+        <attr name="BadgePadding" format="dimension|reference"/>
+        <attr name="BadgeTextSize" format="reference|dimension"/>
+        <attr name="BadgeVerticalMargin" format="reference|dimension"/>
+        <attr name="BadgeHorizonalMargin" format="reference|dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="HorizontalCalendarView">
+        <attr name="numOfPages" format="integer"/>
+        <attr name="nbOfMonths" format="integer"/>
+        <attr name="daysTextSize" format="dimension"/>
+        <attr name="daysTextColor" format="color"/>
+        <attr name="calendarBgColor" format="color"/>
+        <attr name="daysBackgroundColor" format="color"/>
+        <attr name="weekTextSize" format="dimension"/>
+        <attr name="weekTextColor" format="color"/>
+        <attr name="weekBackgroundColor" format="color"/>
+        <attr name="selectedBgColor" format="color"/>
+        <attr name="todaysDateBgColor" format="color"/>
+        <attr name="weekTypeFace" format="string"/>
+        <attr name="headerTypeFace" format="string"/>
+        <attr name="headerForwardIcon" format="reference"/>
+        <attr name="weekForwardIcon" format="reference"/>
+        <attr name="headerPreviousIcon" format="reference"/>
+        <attr name="weekPreviousIcon" format="reference"/>
+        <attr name="hoursTypeFace" format="string"/>
+        <attr name="dayNameLength">
+            <enum name="singleLetter" value="0"/>
+            <enum name="TwoLetters" value="1"/>
+            <enum name="threeLetters" value="2"/>
+        </attr>
+        <attr name="hideNames"  format="boolean"/>
+
+        <!-- danigarciaalva -->
+        <attr name="todaysDateTextColor" format="color"/>
+    </declare-styleable>
+
+</resources>

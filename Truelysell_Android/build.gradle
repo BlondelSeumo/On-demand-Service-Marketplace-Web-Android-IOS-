@@ -1,0 +1,44 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:4.0.2'
+        classpath 'com.google.gms:google-services:4.2.0'
+        classpath 'com.novoda:bintray-release:0.8.0'
+        classpath 'io.codearte.gradle.nexus:gradle-nexus-staging-plugin:0.5.3'
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        maven { url "https://jitpack.io" }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+ext {
+    userOrg = 'yarolegovich'
+    groupId = 'com.yarolegovich'
+    uploadName = 'DiscreteScrollView'
+    description = 'A scrollable list of items that centers the current element and provides easy-to-use APIs for cool item animations.'
+    publishVersion = '1.4.9'
+    licences = ['Apache-2.0']
+
+    compileSdkVersion = 27
+    buildToolsVersion = '26.0.2'
+    targetSdkVersion = 27
+
+    supportLibVersion = '27.1.1'
+}

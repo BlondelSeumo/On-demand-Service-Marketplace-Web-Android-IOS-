@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_location_bg"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:visibility="visible">
+
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:tint="@color/colorPink"
+        android:src="@drawable/ic_location_permission_icon" />
+
+
+    <TextView
+        android:id="@+id/txt_location_access"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="@string/txt_location_access"
+        android:textColor="@color/colorPrimary"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/loc_sub_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="@string/loc_sub_text"
+        android:textAlignment="center"
+        android:textSize="12sp" />
+
+
+    <Button
+        android:id="@+id/bt_turn_loc"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_marginTop="15dp"
+        android:ems="15"
+        android:background="@drawable/shape_rect_round_corner_filled_red"
+        android:text="@string/turn_on_loc"
+        android:textColor="@color/colorWhite"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/bt_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_marginTop="15dp"
+        android:ems="8"
+        android:visibility="gone"
+        android:background="@drawable/shape_rect_round_corner_filled_red"
+        android:text="@string/places_cancel"
+        android:textColor="@color/colorWhite"
+        android:textSize="12sp" />
+
+</LinearLayout>

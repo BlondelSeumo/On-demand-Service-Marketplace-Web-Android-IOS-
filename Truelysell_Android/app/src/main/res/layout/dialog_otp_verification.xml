@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fl_otp_verification"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:visibility="gone">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt_enter_otp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/_10sdp"
+            android:text="@string/txt_enter_otp"
+            android:textColor="@color/textColorBlue"
+            android:textSize="@dimen/_14sdp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_mobile_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/_10sdp"
+            android:text=""
+            android:textColor="@color/textColorBlue"
+            android:textSize="@dimen/_10sdp" />
+
+        <com.mukesh.OtpView
+            android:id="@+id/otp_view"
+            style="@style/OtpWidget.OtpView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/_10sdp"
+            android:gravity="center"
+            android:inputType="number"
+            android:itemBackground="@color/colorWhite"
+            android:textColor="@color/textColorBlue"
+            app:itemCount="4"
+            app:lineColor="@color/colorPink"
+            app:lineWidth="@dimen/_1sdp"
+            app:viewType="rectangle" />
+
+        <Button
+            android:id="@+id/btn_verify"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/_10sdp"
+            android:background="@drawable/shape_rect_round_corner_pink"
+            android:ems="7"
+            android:text="@string/txt_verify"
+            android:textColor="@color/colorWhite" />
+
+        <TextView
+            android:id="@+id/txt_didn_t_receive_otp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:text="@string/txt_didn_t_receive_otp"
+            android:textColor="@color/textColorBlue"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tv_resendcode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:text="@string/tv_resendcode"
+            android:textColor="@color/colorPink"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/txt_change_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:text="@string/txt_change_number"
+            android:textColor="@color/colorPink"
+            android:visibility="gone" />
+
+    </LinearLayout>
+</FrameLayout>
